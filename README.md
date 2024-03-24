@@ -1,7 +1,11 @@
 
 # XAMPP MySQL Database Fix Script
 
-This Bash script automates the process of fixing MySQL database issues on XAMPP by renaming folders and copying necessary files.
+This Bash script automates the process of fixing MySQL database issues on XAMPP by renaming folders and copying necessary files. Ensure you have backup folder in the same directory as mysql
+
+> **try commend or uncomment the copy of ibdata1 if you still revice any error**
+> frurther reference:
+> [https://stackoverflow.com/questions/21279442/xampp-mysql-not-starting-attempting-to-start-mysql-service](https://stackoverflow.com/questions/21279442/xampp-mysql-not-starting-attempting-to-start-mysql-service)
 
 ## Usage
 
