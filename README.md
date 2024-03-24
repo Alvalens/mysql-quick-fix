@@ -1,16 +1,19 @@
-
 # XAMPP MySQL Database Fix Script
 
 This Bash script automates the process of fixing MySQL database issues on XAMPP by renaming folders and copying necessary files. Ensure you have backup folder in the same directory as mysql
 
 > **try commend or uncomment the copy of ibdata1 if you still revice any error**
+>
+> CAUTION: IF YOU DELETE IBDATA1 YOULL LOSE YOUR TABLE
 > frurther reference:
 > [https://stackoverflow.com/questions/21279442/xampp-mysql-not-starting-attempting-to-start-mysql-service](https://stackoverflow.com/questions/21279442/xampp-mysql-not-starting-attempting-to-start-mysql-service)
+>
+> [https://stackoverflow.com/questions/18022809/how-can-i-solve-error-mysql-shutdown-unexpectedly](https://stackoverflow.com/questions/18022809/how-can-i-solve-error-mysql-shutdown-unexpectedly)
 
 ## Usage
 
 1. Download the script to your local machine.
-2. Open the script in a text editor and customize the `base_path` variable to match your XAMPP installation directory.
+2. Open the script in a text editor and customize the `base_path` variable to match your XAMPP Mysql installation directory.
 3. Make you have bash cmd (can be obtained by installing git)
 4. Run the script using `./script_name.sh`.
 
