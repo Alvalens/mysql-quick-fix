@@ -9,6 +9,18 @@ log_error() {
 # Set variable for base path
 base_path="C:/xampp/mysql"
 
+# add confirmation to proceed
+echo "This script will fix the MySQL data at $base_path. Do you want to proceed? (y/n)"
+read -r confirm
+
+# Check if the user wants to proceed
+if [ "$confirm" != "y" ]; then
+    echo "Script execution cancelled."
+    exit 1
+fi
+
+echo "Script execution started. Please wait..."
+
 # Check if the entered path is valid
 if [ ! -d "$base_path" ]; then
     echo "Error: Invalid path. Please enter a valid path."
@@ -37,7 +49,7 @@ for d in "$base_path/data_old"/*; do
 done
 
 # # Copy ibdata1 file from data_old to new data folder
-# cp "$base_path/data_old/ibdata1" "$base_path/data/"
+cp "$base_path/data_old/ibdata1" "$base_path/data/"
 # https://stackoverflow.com/questions/21279442/xampp-mysql-not-starting-attempting-to-start-mysql-service
 
 # Check if the script encountered errors
