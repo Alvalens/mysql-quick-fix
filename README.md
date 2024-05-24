@@ -23,7 +23,7 @@ This Bash script automates the process of fixing MySQL database issues on XAMPP 
 - Creates a new `data` folder.
 - Copies contents from the `backup` folder to the new `data` folder.
 - Copies necessary database folders from `data_old` to `data` (excluding `mysql`, `performance_schema`, and `phpmyadmin`).
-- ~~Copies the `ibdata1` file from `data_old` to `data`.~~
+- Copies the `ibdata1` file from `data_old` to `data`.
 
 ## Error Handling
 
